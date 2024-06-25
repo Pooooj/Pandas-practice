@@ -24,3 +24,21 @@ Task: Determine the total number of books published in a particular year (e.g., 
 Theory: We filter the DataFrame to include only rows where the publication_year column value matches the target year. The resulting count represents the number of books published in that year.
 
 pen_spark
+The functions you used with the above tasks in pandas can be categorized as follows:
+
+1. Filtering:
+
+.loc: Used for label-based selection by row index or labels (Task 5).
+Boolean filtering with comparison operators (>, <, ==, etc.): Used to filter rows based on conditions in specific columns (Tasks 1, 2, 3, 6).
+2. Selecting Data:
+
+[]: Bracket notation for selecting columns or rows based on labels or positions (Tasks 4, 5, 6).
+.head(n): Selects the first n rows from the DataFrame (Task 4).
+3. Aggregation:
+
+.mean(): Calculates the mean value of a numerical column (Task 3).
+.shape[0]: Returns the number of rows in the DataFrame (Tasks 1, 6).
+4. String Manipulation (Optional):
+
+.str.contains(pattern): Checks if a string column contains a specific pattern (Task 2, assuming author names might be comma-separated).
+These are the primary functions used for the described tasks. Depending on your specific DataFrame structure and manipulation needs, you might also encounter additional functions for data cleaning, transformation, and visualization.
